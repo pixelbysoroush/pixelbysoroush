@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+@font-face {
+
+  font-family: "JetBrains-extrabold";
+  src: url('/assets/font/JetBrains_Mono/static/JetBrainsMono-ExtraBold.ttf');
+  /* font-weight: 100; */
+  font-size: 400px;
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "JetBrains-bold";
+  src: url('/assets/font/JetBrains_Mono/static/JetBrainsMono-Bold.ttf');
+  /* font-weight: 100; */
+  font-size: 400px;
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "JetBrains-ExtraLight";
+  src: url('/assets/font/JetBrains_Mono/static/JetBrainsMono-ExtraLight.ttf');
+  /* font-weight: 100; */
+  font-size: 400px;
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "JetBrains-Light";
+  src: url('/assets/font/JetBrains_Mono/static/JetBrainsMono-Light.ttf');
+  /* font-weight: 100; */
+  /* font-size: 400px;  */
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "JetBrainsMono-Medium";
+  src: url('/assets/font/JetBrains_Mono/static/JetBrainsMono-Medium.ttf');
+  /* font-weight: 100; */
+  /* font-size: 400px;  */
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "JetBrains-Regular";
+  src: url('/assets/font/JetBrains_Mono/static/JetBrainsMono-Regular.ttf');
+  /* font-weight: 100; */
+  /* font-size: 400px;  */
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "JetBrains-Thin";
+  src: url('/assets/font/JetBrains_Mono/static/JetBrainsMono-ThinItalic.ttf');
+  /* font-weight: 100; */
+  /* font-size: 400px;  */
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "Archivo-Black";
+  src: url('/assets/font/Archivo/static/Archivo-Black.ttf');
+  /* font-weight: 100; */
+  /* font-size: 400px;  */
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "Archivo-Medium";
+  src: url('/assets/font/Archivo/static/Archivo-Medium.ttf');
+  /* font-weight: 100; */
+  /* font-size: 400px;  */
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "Archivo-Light";
+  src: url('/assets/font/Archivo/static/Archivo-Light.ttf');
+  /* font-weight: 100; */
+  /* font-size: 400px;  */
+  font-display: swap;
+
+}
+
+@font-face {
+
+  font-family: "Archivo-Thin";
+  src: url('/assets/font/Archivo/static/Archivo-Thin.ttf');
+  /* font-weight: 100; */
+  /* font-size: 400px;  */
+  font-display: swap;
+
+}
+
+
+
+:root {
+  --bg-default: #e7e7e7;
+  --text-primary: #111827;
+  --text-secondary: #5e5e5e;
+  /* --border-strong :#FC5924 ; */
+  --border-strong: #f66e11;
+}
+
+body{
+  background-color: #f3f0ec33;
+}
+
+/* HEADER */
+/* header{
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+} */
+.logoHeader {
+  font-family: "Archivo-Thin";
+  font-size: clamp(22px, 4vw, 30px);
+  /* font-size: 22px; */
+  /* font-size: 30px; */
+}
+
+.contact {
+  font-family: "Archivo-Black";
+  font-size: clamp(15px, 1vw, 22px);
+  /* font-size: 15px; */
+  /* font-size: 22px; */
+
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+}
+
+/* HERO */
+
+.hero {
+  font-family: "Archivo-Thin";
+  font-size: clamp(40px, 11vw, 120px);
+  transition: 0.6s;
+  display: none;
+}
+
+.square {
+  /* width: clamp(7px, 2vw, 10px);
+  height: clamp(7px, 2vw, 10px); */
+  width: 7px;
+  height: 7px;
+  background-color: #000000;
+  position: fixed;
+  left: 28px;
+  top: 241px;
+   transition: transform .25s ease;
+}
+.square.scrolling {
+    transform: scaleY(2) scaleX(.8);
+}
+/* MAIN */
+
+/* INFORMATION SECTION */
+
+.information {
+  font-family: "JetBrains-Light";
+  font-size: .9rem;
+}
+
+/* BIO SECTION */
+.bio {
+  font-family: "JetBrains-Regular";
+  /* font-size: 30px; */
+  font-size: 1.7rem;
+  /* text-align: center; */
+  line-height: 3rem;
+
+
+}
+.picImg{
+  aspect-ratio: 5/5;
+} 
+h2{
+  font-family:"Archivo-thin";
+  /* font-size: 3rem; */
+  /* font-size: vw; */
+  letter-spacing: 1px;
+   font-size: clamp(2rem , 7vw , 3rem); 
+}
+.skills ul li{
+  font-family:"JetBrains-Light";
+  /* font-size: .8rem; */
+  /* font-size: 1.2rem; */
+  font-size: clamp(.8rem , 3vw , 1.2rem);
+}
+.projects h3 {
+  font-family:"Archivo-thin" ;
+  font-size:clamp(2rem , 7vw , 3rem) ;
+}
+footer {
+  background-color: #181818;
+  color: #ffffff;
+  height: 100vh;
+}
+.footer-text{
+  font-family:"Archivo-thin" ;
+  font-size: clamp(.7rem , 3vw , 3rem);
+}
+.time{
+  font-family: "JetBrains-Light";
+  font-size: .9rem;
+   padding: 1rem 0;
+}
+.footer-contact li{
+  padding: 1rem 0;
+  font-family:"Archivo-Black";
+  font-size: .9rem;
+  /* font-weight: bold; */
+}
+.footer-contact li:last-child{
+  text-decoration: underline;
+}
+.footer-logo{
+  font-family:"Archivo-thin";
+  font-size: clamp(22px, 4vw, 30px);
+}
+.footer-social{
+  font-family:"Archivo-Black";
+  
+}
