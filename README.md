@@ -43,7 +43,7 @@ portfolio/
 
 View the portfolio here:
 
-**[https://your-portfolio-link.com](https://pixelbysoroush.github.io/fluid-glass/index.html)**
+**[https://your-portfolio-link.com](https://pixelbysoroush.github.io/pixelbysoroush/index.html)**
 
 ## Design Philosophy
 
